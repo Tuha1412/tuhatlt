@@ -1,0 +1,126 @@
+*{margin: 0; padding: 0;} 
+html{
+    font-size: 62.5%;
+    font-family: 'Work Sans'!important;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(to right top, #ff4988, #ffc781, #fffefc);
+}
+.wrap{
+    max-width: 50rem;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+}
+.title{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.form__group{
+    width: 100%;
+}
+.form__input{
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    border: 1px transparent gray;
+    background-color: #eee;
+}
+.form__input:focus{
+    background-color: white;
+    border-color: #eee;
+}
+.form__input:first-child{
+    margin-top: 3rem;
+}
+.form__input input{
+    width: 95%;
+    font-size: 1.4rem;
+    margin: 1rem;
+    background-color: transparent;
+}
+input{
+    outline: none;
+    border: none;
+    background-color: none;
+}
+.btn-result{
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;   
+}
+.result{
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.3rem;
+    display: none;
+}
+@media screen and (max-width: 1024px){
+    body{
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .title{
+        font-size: 1.5rem;
+    }
+    .form__input input{
+        font-size: 1rem;
+    }
+    .btn-result{
+        font-size: 1rem;
+    }
+    .result{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 340px){
+    .title{
+        font-size: 1.5rem;
+    }
+    .form__input input{
+        font-size: .8rem;
+    }
+    .btn-result{
+        font-size: .8rem;
+    }
+    .result{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .title{
+        font-size: 1rem;
+    }
+    .form__input input{
+        font-size: .7rem;
+    }
+    .btn-result{
+        font-size: .5rem;
+        width: 5rem;
+        height: 2rem;
+    }
+    .result{
+        font-size: .7rem;
+    }
+}
