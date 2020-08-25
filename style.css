@@ -74,12 +74,6 @@ input{
     font-size: 1.3rem;
     display: none;
 }
-@media screen and (max-width: 1024px){
-    body{
-        height: 70%;
-    }
-}
-
 @media screen and (max-width: 500px){
     .title{
         font-size: 1.5rem;
